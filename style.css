@@ -166,6 +166,10 @@ span{
 	
 }
 
+.submit:hover{
+    background-color: var(--Lightgrayishviolet);
+}
+
 .sub{
     
     display: inline;
@@ -199,6 +203,41 @@ span{
     padding: 77px 0px 30px 0px;
     text-align: center;
     width: 404px;
-    border: 1px solid red;
+    
+    transform: translateX(-120%);
+    
+    position: absolute;
+    top: 355px;
+    left: 54px;
+    background-color: var(--White);
 
 }
+
+.open{
+    transform: translateX(0%);
+    
+}
+
+.open{
+  
+    transition: all 0.3s ease-in-out;
+}
+
+
+.close{
+    display: none;
+}
+
+
+.form input:focus, textarea:focus {
+
+    border-image-source: linear-gradient(hsl(249, 99%, 64%) , hsl(278, 94%, 30%)) !important;
+    border-width: 1pt !important;
+    border-image-slice: 1 !important;
+    border-radius: 10px !important;
+    }
+    
+    input:focus, textarea:focus, select:focus {
+    outline-offset: 0px !important;
+    outline: none !important;
+    }

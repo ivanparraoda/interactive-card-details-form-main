@@ -66,7 +66,7 @@
 
   </div>
   <main>
-    <form action="#" >
+    <form action="#" class="form" >
       <label for="fname">Cardholder Name</label><br>
       <input type="text" id="fname" name="fname" placeholder="  e.g. Jane Appleseed"><br>
       <label for="lname">Card Number</label><br>
@@ -78,6 +78,7 @@
        id="inputExpDateMonth" 
        placeholder="MM" 
        maxlength='4'>
+      
        <input 
        type="text" 
        id="inputExpDateYear" 
@@ -87,20 +88,20 @@
        
        <label for="inputExpDateMonth"></label>
       <input type="password" id="cvv" placeholder="e.g. 123">
-      <input type="submit" value="Confirm" class="submit">
+      <input type="submit" value="Confirm" class="submit" id="submit">
       
     </form>
   </main>
 </div>
   <!-- Completed state start -->
-  <section class="complete" id="statecomplete" style="display: none;">
+  <section class="complete" id="statecomplete" >
     <img src="./images/icon-complete.svg" alt="icon complete">
     <h1>Thank you!</h1>
     <p>We've added your card details</p>
     <input type="submit" value="Continue" class="sub">
   </section>
 
-  
+  <script src="./index.js"></script>
 
 </body>
 </html>
